@@ -42,9 +42,9 @@ def read_img(file_url):
         return file_data.replace('data:image/png;base64,','')
 
 if __name__ == '__main__':
-    # en_img = encode_base64('./icic.png')
-    # decode_base64(en_img)
-    txt_data = read_img('./static/t.txt')
-    decode_base64(txt_data)
-    print(txt_data)
+    en_img = encode_base64('./images/icic.png')
+    decode_base64(en_img)
+    # txt_data = read_img('./static/t.txt')
+    # decode_base64(txt_data)
+    # print(txt_data)
     app.run(debug=True)
