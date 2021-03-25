@@ -23,10 +23,6 @@ pipenv shell
 pipenv graph
 ```
 
-## Python反向生成requirements.txt
-
-`pip freeze > requirements.txt`
-
 ## Pipenv Commands
 
 ```
@@ -98,9 +94,31 @@ pipenv会自动帮你管理虚拟环境和依赖文件，并且提供一系列�
 
 `pipenv --where`
 
+> Python反向生成requirements.txt
+
+`pip freeze > requirements.txt`
+
 > 通过requirements.txt文件安装模块
 
 `pipenv install -r requirements.txt`
+
+## 宝塔项目部署
+### Python项目管理器
+
+**管理器默认使用pip安装项目根目录requirements.txt内的模块，如有其他模块需要安装请手动进入虚拟环境安装**
+
+> 进入虚拟环境方法：
+
+```sh
+在命令行输入 `source 项目路径/项目名_venv/bin/activate`
+如：`source /data/python/project1_venv/bin/activate`
+```
+
+### Supervisor管理器
+
+```html
+pass
+```
 
 > 总结
 
