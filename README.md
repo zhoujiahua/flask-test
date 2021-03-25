@@ -23,6 +23,9 @@ pipenv shell
 pipenv graph
 ```
 
+## Python反向生成requirements.txt
+
+`pip freeze > requirements.txt`
 
 ## Pipenv Commands
 
